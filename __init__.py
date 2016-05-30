@@ -13,7 +13,10 @@ Modules:
 
 """
 
-from docbrowser import DocBrowser, DocBrowserApp
+try:
+    from .docbrowser import DocBrowser, DocBrowserApp
+except:
+    from docbrowser import DocBrowser, DocBrowserApp
 
 __author__ = 'ophermit'
 
